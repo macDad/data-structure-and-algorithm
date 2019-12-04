@@ -1,12 +1,10 @@
-package com.example.DnA.binaryt;
+package com.mac.dna.binaryt;
 
-import com.example.DnA.BinarySearch;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
 class BinaryTreeTest {
@@ -22,11 +20,13 @@ class BinaryTreeTest {
 
         return bt;
     }
+
     @Test
-    void addRecursiveBinaryTree () {
+    void addRecursiveBinaryTree() {
         BinaryTree bt = createBinaryTree();
         assertTrue(bt.containsNode(3));
     }
+
     @Test
     public void givenABinaryTree_WhenAddingElements_ThenTreeContainsThoseElements() {
         BinaryTree bt = createBinaryTree();

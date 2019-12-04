@@ -1,4 +1,4 @@
-package com.example.DnA;
+package com.mac.dna;
 
 
 public class BinarySearch {

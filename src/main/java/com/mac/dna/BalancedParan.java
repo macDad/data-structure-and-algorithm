@@ -1,4 +1,4 @@
-package com.mac.DnA;
+package com.mac.dna;
 
 public class BalancedParan {
     public static void main(String[] args) {
@@ -10,11 +10,11 @@ public class BalancedParan {
     private static boolean areParenthesisBalanced(String s) {
         char[] panthers = s.toCharArray();
         Stack stack = new Stack();
-        for (char c:panthers){
-            if(c=='{' || c == '(' || c == '['){
+        for (char c : panthers) {
+            if (c == '{' || c == '(' || c == '[') {
                 stack.push(c);
             }
-            if (c == '}' || c == ')' || c == ']'){
+            if (c == '}' || c == ')' || c == ']') {
                 if (stack.isEmpty() || !isMatchingPair(stack.pop(), c)) return false;
             }
         }

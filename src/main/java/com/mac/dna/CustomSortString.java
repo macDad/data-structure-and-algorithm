@@ -1,4 +1,4 @@
-package com.mac.DnA;
+package com.mac.dna;
 
 import java.util.HashMap;
 import java.util.Map;

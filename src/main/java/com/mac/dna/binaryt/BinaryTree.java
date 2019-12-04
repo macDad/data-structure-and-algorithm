@@ -1,4 +1,4 @@
-package com.example.DnA.binaryt;
+package com.mac.dna.binaryt;
 
 import java.util.LinkedList;
 import java.util.Queue;
